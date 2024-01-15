@@ -9,6 +9,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: black;
 }
 
 html {
@@ -170,8 +171,8 @@ section {
 
 .section__pic-container {
   display: flex;
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   margin: auto 0;
 }
 
