@@ -1,5 +1,5 @@
 const langSec = document.querySelector('.languageSelection');
-const buttons = document.querySelectorAll('a');
+const buttons = document.querySelector('a');
 const textNavlinks = document.querySelector('.nav-links');
 
 buttons.forEach(button => {
@@ -16,12 +16,4 @@ const data = {
       "about": "asdf",
     }
   }
-}
-
-
-function toggleMenu() {
-  const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
-  menu.classList.toggle("open");
-  icon.classList.toggle("open");
 }
