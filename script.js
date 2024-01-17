@@ -1,7 +1,11 @@
 const langSec = document.querySelector('.languageSelection');
 const buttons = document.querySelectorAll('a');
 const textTitle = document.querySelector('.title');
-const textNav = document.querySelector('.nav-links')
+const textNav1 = document.getElementById("nav1")
+const textNav2 = document.getElementById("nav2")
+const textNav3 = document.getElementById("nav3")
+const textNav4 = document.getElementById("nav4")
+
 
 buttons.forEach(button => {
   button.addEventListener('click', () => {
@@ -10,14 +14,21 @@ buttons.forEach(button => {
 
     const attr = button.getAttribute('language');
 
-    textNav.textContent = data[attr].nav-links;
+    textNav1.textContent = data[attr].nav1;
+    textNav2.textContent = data[attr].nav2;
+    textNav3.textContent = data[attr].nav3;
+    textNav4.textContent = data[attr].nav4;
+
   });
 });
 
 const data = {
   "english":
   {
-    "nav-links": "Hello World2"
+    "nav1": "111",
+    "nav2": "Experience1",
+    "nav3": "Projects1",
+    "nav4": "Contact1"
   }
 }
 
