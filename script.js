@@ -1,20 +1,23 @@
 const langSec = document.querySelector('.languageSelection');
 const buttons = document.querySelectorAll('a');
-const textNavlinks = document.querySelector('.nav-links');
+const textTitle = document.querySelector('.title');
+const textNav = document.querySelector('.nav-links')
 
 buttons.forEach(button => {
   button.addEventListener('click', () => {
     langSec.querySelector('.active').classList.remove('active');
     button.classList.add('active');
+
+    const attr = button.getAttribute('language');
+
+    textNav.textContent = data[attr].nav-links;
   });
 });
 
 const data = {
   "english":
   {
-    "nav-links": {
-      "about": "asdf",
-    }
+    "nav-links": "Hello World2"
   }
 }
 
